@@ -47,6 +47,7 @@
          "id":5,
          "name":"background",
          "opacity":1,
+         "tintcolor":"#919191",
          "type":"tilelayer",
          "visible":true,
          "width":80,

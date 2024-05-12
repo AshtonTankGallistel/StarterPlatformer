@@ -40,9 +40,10 @@ class Platformer extends Phaser.Scene {
         this.backgroundLayer = this.map.createLayer("background", this.tileset, 0, 0);
         this.backgroundLayer.setScale(2.0);
         //Wanted to tint it darker, but .setTint doesn't seem to work. Not sure why.
+        //Also set the tiles to be dark for this layer in tiled, but it didn't seem to carry over into the game
         //Sadly have to turn this in, hope you enjoy despite this escess detail!
         //this.backgroundLayer.setTint(0xff0000);
-        //console.log(this.backgroundLayer);
+        //console.log(this.backgroundLayer.tintcolor);
         this.groundLayer = this.map.createLayer("Ground-n-Platforms", this.tileset, 0, 0);
         this.groundLayer.setScale(2.0);
         this.detailsLayer = this.map.createLayer("details", this.tileset, 0, 0);
